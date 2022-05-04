@@ -1,3 +1,7 @@
+/* --------------------------------- IMPORTS -------------------------------- */
+import CartWidget from "../CartWidget/CartWidget";
+/* -------------------------------------------------------------------------- */
+
 export default function NavBar() {
   return (
     <header>
@@ -10,6 +14,7 @@ export default function NavBar() {
             <li>INICIO</li>
             <li>PRODUCTOS</li>
             <li>CONTACTO</li>
+            <CartWidget />
           </ul>
         </nav>
       </div>

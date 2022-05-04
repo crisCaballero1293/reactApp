@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+/* ------------------------------- DESAFIO DOS ------------------------------ */
+/* ----------------------------- CREAR EL NAVBAR ---------------------------- */
 
 .container {
   background-color: rgb(241, 241, 241);
@@ -44,3 +46,26 @@
   font-size: 14px;
   font-weight: lighter;
 }
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------ DESAFIO TRES ------------------------------ */
+/* --------------------- AGREGAR CART WIDGET Y ITEM LIST -------------------- */
+
+.imgCart {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+}
+
+.txtProvContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+.txtProvicional {
+  font-size: 25px;
+  font-weight: 500;
+  color: cornflowerblue;
+}
+/* -------------------------------------------------------------------------- */
