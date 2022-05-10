@@ -1,7 +1,10 @@
+import ItemCount from "../ItemCount/ItemCount";
+
 export default function ItemListContainer({ gretting }) {
   return (
-    <div className="txtProvContainer">
+    <main className="txtProvContainer">
       <p className="txtProvicional">{gretting}</p>
-    </div>
+      <ItemCount />
+    </main>
   );
 }

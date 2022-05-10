@@ -69,3 +69,56 @@
   color: cornflowerblue;
 }
 /* -------------------------------------------------------------------------- */
+
+/* ----------------------------- DESAFIO CUATRO ----------------------------- */
+/* ---------- AGREGAR CONTADOR CON BOTONES Y, BOTON AÑADIR AL CARRO --------- */
+.mainContainer {
+  margin: auto;
+  margin-top: 50px;
+}
+.cardContainer {
+  margin: auto;
+  max-width: 180px;
+  font-weight: 200;
+  color: gray;
+}
+.cardContainer img {
+  width: 100%;
+  height: 150px;
+  border: 1px solid gray;
+  margin-bottom: 15px;
+}
+.itemTitle {
+  color: rgb(86, 86, 86);
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.buttonsCountContainer {
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.5px solid gray;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+.buttonsCountContainer button {
+  border: none;
+  background: none;
+  color: cornflowerblue;
+  font-size: 25px;
+  cursor: pointer;
+}
+.reduceButton {
+  margin-bottom: 5px;
+}
+.buttonAddCartContainer button {
+  width: 100%;
+  height: 35px;
+  border: 0.5px solid cornflowerblue;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  color: gray;
+}
+/* -------------------------------------------------------------------------- */
