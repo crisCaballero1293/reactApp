@@ -1,21 +1,38 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail";
-import axios from "axios";
+// import axios from "axios";
+import { useParams } from "react-router-dom";
+import { products } from "../Data/Data.js";
+import Item from "../Item/Item";
 
 export default function ItemDetailContainer() {
-  const [item, setItem] = useState([]);
+  const [data, setData] = useState([]);
+  const { detailId } = useParams();
 
   useEffect(() => {
+    /* ------------- HACIENDO REQUEST O PETICIÓN, O (FETCH) CON LA LIBRERIA AXIOS ------------- */
+    /* const getData = axios.get("./data.json");
     setTimeout(() => {
-      axios.get("./data.json").then((res) => setItem(res.data[2]));
-    }, 3000);
+      getData.then((res) => setItem(res.find((item) => item.id === parseInt(detailID))));
+    }, 2000); */
+    /* -------------------------------------------------------------------------- */
+    /* -------------- CREANDO PROMISE DESDE IMPORTAR ARRAY PRODUCTS ------------- */
+    const getData = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(products);
+        reject("Algo Salio Mal =(");
+      }, 1500);
+    });
+    getData.then((res) => setData(res.find((prod) => prod.id === parseInt(detailId))));
+    getData.catch((error) => console.log(error));
+    /* -------------------------------------------------------------------------- */
     // eslint-disable-next-line
   }, []);
-  console.log("item", item);
+  console.log("data", data);
 
   return (
     <section>
-      <ItemDetail item={item} />
+      <ItemDetail data={data} />
     </section>
   );
 }

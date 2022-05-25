@@ -16,10 +16,10 @@ export default function NavBar() {
               <NavLink to="/">INICIO</NavLink>
             </li>
             <li>
-              <NavLink to="/categoria1">CATEGORIA 1</NavLink>
+              <NavLink to="/categoria/1">CATEGORIA 1</NavLink>
             </li>
             <li>
-              <NavLink to="/categoria2">CATEGORIA 2</NavLink>
+              <NavLink to="/categoria/2">CATEGORIA 2</NavLink>
             </li>
             <li>
               <NavLink to="/contacto">CONTÁCTO</NavLink>
