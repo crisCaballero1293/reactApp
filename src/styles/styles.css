@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+:root {
+  --logoFont: "Share Tech", sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,12 +28,56 @@
 
 .logo {
   padding: 15px 15px 15px 23px;
+  font-family: var(--logoFont);
+  font-size: 2em;
+  letter-spacing: -0.4mm;
 }
 
 .mainNav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.listItems li .link {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.listItems li .link:hover {
+  color: darkslateblue;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-txt {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner-txt h2 {
+  color: aliceblue;
+  font-family: var(--logoFont);
+  font-size: 40px;
 }
 
 .listItems {
@@ -124,4 +172,10 @@
   cursor: pointer;
   color: gray;
 }
+/* -------------------------------------------------------------------------- */
+/* ------------------------- STYLES DETAIL CONTAINER ------------------------ */
+/* .detailSection {
+} */
+/* .itemDetailContainer {
+} */
 /* -------------------------------------------------------------------------- */

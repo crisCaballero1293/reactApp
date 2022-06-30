@@ -31,7 +31,7 @@ export default function ItemDetailContainer() {
   console.log("data", data);
 
   return (
-    <section>
+    <section className="detailSection">
       <ItemDetail data={data} />
     </section>
   );
